@@ -9,39 +9,24 @@ package Model;
  * @author ALUNOS
  */
 public class Usuario {
-    private int idusuario;
-    private String idcpf;
-    private String datadenascimento;
+    private int idUsuario;
+    private String CPF;
+    private String DataDeNascimento;
 
     public Usuario() {}
 
-    public Usuario(int idusuario, String idcpf, String datadenascimento) {
-        this.idusuario = idusuario;
-        this.idcpf = idcpf;
-        this.datadenascimento = datadenascimento;
+    public Usuario(int idUsuario, String CPF, String DataDeNascimento) {
+        this.idUsuario = idUsuario;
+        this.CPF = CPF;
+        this.DataDeNascimento = DataDeNascimento;
     }
 
-    public int getIdusuario() {
-        return idusuario;
-    }
+    public int getIdUsuario() { return idUsuario; }
+    public void setIdUsuario(int idUsuario) { this.idUsuario = idUsuario; }
 
-    public void setIdusuario(int idusuario) {
-        this.idusuario = idusuario;
-    }
+    public String getCPF() { return CPF; }
+    public void setCPF(String CPF) { this.CPF = CPF; }
 
-    public String getIdcpf() {
-        return idcpf;
-    }
-
-    public void setIdcpf(String idcpf) {
-        this.idcpf = idcpf;
-    }
-
-    public String getDatadenascimento() {
-        return datadenascimento;
-    }
-
-    public void setDatadenascimento(String datadenascimento) {
-        this.datadenascimento = datadenascimento;
-    }
+    public String getDataDeNascimento() { return DataDeNascimento; }
+    public void setDataDeNascimento(String DataDeNascimento) { this.DataDeNascimento = DataDeNascimento; }
 }

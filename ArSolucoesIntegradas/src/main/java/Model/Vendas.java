@@ -11,20 +11,24 @@ package Model;
 public class Vendas {
     private int idVendas;
     private String data;
-    private String produtosOUservicos;
-    private String origem;
     private String categoria;
-    private String preco;
+    private double preco;
+    private String formaDePagamento;
+    private Integer clienteIdCliente;
+    private Integer produtosIdProdutos;
+    private Integer servicosIdServicos;
 
     public Vendas() {}
 
-    public Vendas(int idVendas, String data, String produtosOUservicos, String origem, String categoria, String preco) {
+    public Vendas(int idVendas, String data, String categoria, double preco, String formaDePagamento, Integer clienteIdCliente, Integer produtosIdProdutos, Integer servicosIdServicos) {
         this.idVendas = idVendas;
         this.data = data;
-        this.produtosOUservicos = produtosOUservicos;
-        this.origem = origem;
         this.categoria = categoria;
         this.preco = preco;
+        this.formaDePagamento = formaDePagamento;
+        this.clienteIdCliente = clienteIdCliente;
+        this.produtosIdProdutos = produtosIdProdutos;
+        this.servicosIdServicos = servicosIdServicos;
     }
 
     public int getIdVendas() {
@@ -43,22 +47,6 @@ public class Vendas {
         this.data = data;
     }
 
-    public String getProdutosOUservicos() {
-        return produtosOUservicos;
-    }
-
-    public void setProdutosOUservicos(String produtosOUservicos) {
-        this.produtosOUservicos = produtosOUservicos;
-    }
-
-    public String getOrigem() {
-        return origem;
-    }
-
-    public void setOrigem(String origem) {
-        this.origem = origem;
-    }
-
     public String getCategoria() {
         return categoria;
     }
@@ -67,11 +55,45 @@ public class Vendas {
         this.categoria = categoria;
     }
 
-    public String getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(String preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
-}
+
+    public String getFormaDePagamento() {
+        return formaDePagamento;
+    }
+
+    public void setFormaDePagamento(String formaDePagamento) {
+        this.formaDePagamento = formaDePagamento;
+    }
+
+    public Integer getClienteIdCliente() {
+        return clienteIdCliente;
+    }
+
+    public void setClienteIdCliente(Integer clienteIdCliente) {
+        this.clienteIdCliente = clienteIdCliente;
+    }
+
+    public Integer getProdutosIdProdutos() {
+        return produtosIdProdutos;
+    }
+
+    public void setProdutosIdProdutos(Integer produtosIdProdutos) {
+        this.produtosIdProdutos = produtosIdProdutos;
+    }
+
+    public Integer getServicosIdServicos() {
+        return servicosIdServicos;
+    }
+
+    public void setServicosIdServicos(Integer servicosIdServicos) {
+        this.servicosIdServicos = servicosIdServicos;
+    }
+
+    
+   }

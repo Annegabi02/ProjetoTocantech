@@ -8,80 +8,40 @@ package Model;
  *
  * @author ALUNOS
  */
-public class Fornecedores  {
-    private int idfornecedor;
+public class Fornecedores {
+    private int idFornecedores;
     private String nome;
-    private String cnpjEcpf;
+    private String cnpj_cpf;
     private String telefone;
-    private String endereco;
-    private String produtos;
     private String email;
+    private String endereco;
 
-    public Fornecedores () {}
+    public Fornecedores() {}
 
-    public Fornecedores (int idfornecedor, String nome, String cnpjEcpf, String telefone, String endereco, String produtos, String email) {
-        this.idfornecedor = idfornecedor;
+    public Fornecedores(int idFornecedores, String nome, String cnpj_cpf, String telefone, String email, String endereco) {
+        this.idFornecedores = idFornecedores;
         this.nome = nome;
-        this.cnpjEcpf = cnpjEcpf;
+        this.cnpj_cpf = cnpj_cpf;
         this.telefone = telefone;
-        this.endereco = endereco;
-        this.produtos = produtos;
         this.email = email;
-    }
-
-    public int getIdfornecedor() {
-        return idfornecedor;
-    }
-
-    public void setIdfornecedor(int idfornecedor) {
-        this.idfornecedor = idfornecedor;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCnpjEcpf() {
-        return cnpjEcpf;
-    }
-
-    public void setCnpjEcpf(String cnpjEcpf) {
-        this.cnpjEcpf = cnpjEcpf;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
-    public String getProdutos() {
-        return produtos;
-    }
+    public int getIdFornecedores() { return idFornecedores; }
+    public void setIdFornecedores(int idFornecedores) { this.idFornecedores = idFornecedores; }
 
-    public void setProdutos(String produtos) {
-        this.produtos = produtos;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-    public String getEmail() {
-        return email;
-    }
+    public String getCnpj_cpf() { return cnpj_cpf; }
+    public void setCnpj_cpf(String cnpj_cpf) { this.cnpj_cpf = cnpj_cpf; }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    public String getTelefone() { return telefone; }
+    public void setTelefone(String telefone) { this.telefone = telefone; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+
+    public String getEndereco() { return endereco; }
+    public void setEndereco(String endereco) { this.endereco = endereco; }
 }

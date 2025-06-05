@@ -8,6 +8,6 @@ package Controller;
  *
  * @author ALUNOS
  */
-public class ServicosEVendasController {
+public class PrecificacaoController {
     
 }
